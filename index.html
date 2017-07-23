@@ -41,13 +41,18 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
     for(var i=0;i<tmp.length;++i){
         result[i] = tmp[i].split(',');
     }
- 
-    alert(result[1][0]); 
 }
 
 getCSV(); //最初に実行される
-		
-		
+
+//csvのデータをマーカーデータセットに差し込む
+var markerData = []
+for(var l = 0; l < result.length; l++){
+	makerData[l].name = result[l][0];
+	makerData[l].lat = result[l][1];
+	makerData[l].lng = result[l][0];
+}
+
 // Marker
 var marker = [];
  // マーカー毎の処理
@@ -61,6 +66,6 @@ var marker = [];
 		
 		
 	</script>
-	<br>iii
+	<br>jjj
 </body>
 </html>
