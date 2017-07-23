@@ -47,6 +47,7 @@ getCSV(); //最初に実行される
 
 //csvのデータをマーカーデータセットに差し込む
 var markerData = [{name:'a',lat:1,lng:1}];
+alert(markerData[l].name);
 for(var l = 0; l < result.length; l++){
 	makerData[l].name = result[l][0];
 	makerData[l].lat = Number(result[l][1]);
@@ -66,6 +67,6 @@ var marker = [];
 		
 		
 	</script>
-	<br>mmm
+	<br>lll
 </body>
 </html>
