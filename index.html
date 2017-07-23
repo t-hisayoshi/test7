@@ -46,7 +46,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 getCSV(); //最初に実行される
 
 //csvのデータをマーカーデータセットに差し込む
-var markerData = {name:,lat:,lng:}
+var markerData = [{name:a,lat:1,lng:1}];
 for(var l = 0; l < result.length; l++){
 	makerData[l].name = result[l][0];
 	makerData[l].lat = Number(result[l][1]);
