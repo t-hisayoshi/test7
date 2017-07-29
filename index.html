@@ -20,6 +20,7 @@ var map = new google.maps.Map( mapDiv, {
 	zoom: 11 ,
 } ) ;
 
+//csvデータの読み込み
 function csv2Array(filePath) { //csvﾌｧｲﾙﾉ相対ﾊﾟｽor絶対ﾊﾟｽ
 	var csvData = new Array();
 	var data = new XMLHttpRequest();	
@@ -44,9 +45,9 @@ var result = csv2Array("shop.csv"); //最初に実行される
 //csvのデータをマーカーデータセットに差し込む
 var markerData = [{name:'a',lat:1,lng:1}];
 for(var l = 0; l < result.length; l++){
-	markerData[l].name = result[l][0];
-	markerData[l].lat = Number(result[l][1]);
-	markerData[l].lng = Number(result[l][2]);
+	markerData[l].['name'] = result[l][0];
+	markerData[l].['lat'] = Number(result[l][1]);
+	markerData[l].['lng'] = Number(result[l][2]);
 }
 		
 alert(markerData[0].lat);
