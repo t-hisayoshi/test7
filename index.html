@@ -44,9 +44,9 @@ var result = csv2Array("shop.csv"); //最初に実行される
 //csvのデータをマーカーデータセットに差し込む
 var markerData = [{name:'a',lat:1,lng:1}];
 for(var l = 0; l < result.length; l++){
-	makerData[l].name = result[l][0];
-	makerData[l].lat = Number(result[l][1]);
-	makerData[l].lng = Number(result[l][2]);
+	markerData[l].name = result[l][0];
+	markerData[l].lat = Number(result[l][1]);
+	markerData[l].lng = Number(result[l][2]);
 }
 		
 alert(markerData[0].lat);
@@ -64,6 +64,6 @@ var marker = [];
 		
 		
 	</script>
-	<br>www
+	<br>aaa
 </body>
 </html>
